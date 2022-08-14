@@ -1,0 +1,76 @@
+:root {
+  --text: hsl(229, 23%, 23%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, hsl(185, 75%, 39%), #008080);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-pattern-top {
+  position: absolute;
+  left: -25%;
+  top: -60%;
+}
+
+.bg-pattern-bottom {
+  position: absolute;
+  right: -20%;
+  bottom: -70%;
+}
+
+.card {
+  width: 320px;
+  height: 330px;
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+.profile {
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid hsl(0, 6%, 90%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.profile > img {
+  border-radius: 50%;
+}
+
+.name {
+  color: var(--text);
+  font-weight: 700;
+  margin: 1rem 0;
+}
+span {
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+  font-size: 15px;
+}
+.stats {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
